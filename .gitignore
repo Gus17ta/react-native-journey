@@ -1,0 +1,26 @@
+'# Dependencies
+node_modules/
+.expo/
+.expo-shared/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Build
+dist/
+build/
+*.log
+
+# Packages
+*.tgz
+package-lock.json
+' | Out-File -FilePath .gitignore -Encoding UTF8

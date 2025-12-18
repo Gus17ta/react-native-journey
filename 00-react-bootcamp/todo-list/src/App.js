@@ -53,43 +53,52 @@ function TodoList() {
     </div>
 
    <h2>Pendentes</h2>
-     
-   { pendentes.map(tarefa => 
-      <div key ={tarefa.id}>
-        <input
-        type='checkbox'
-        checked={tarefa.completa}
-        onChange={ ()=> marcarCompleta(tarefa.id)}
-        />
-        <span className='tarefa-completa'>{tarefa.texto}</span>
-         <button onClick={() => deletarTarefa(tarefa.id)}>
-      🗑️
-    </button>
-      </div>
-    )
-   }
-      
-
-      <h2>Completas</h2>
-      {completas.map(tarefa => (
-          <div 
-          key={tarefa.id}>
-            <input
+    {pendentes.length === 0 ? (
+      <p className="vazio">Nenhuma tarefa pendente 🎉</p>
+    ) : (
+      pendentes.map(tarefa => (
+        <div key={tarefa.id} className="tarefa-item">
+          <input
             type='checkbox'
             checked={tarefa.completa}
             onChange={() => marcarCompleta(tarefa.id)}
-            />
-
-          <span style={{textDecoration: 'line-through' }}>
-          {tarefa.texto}
-          </span>
-           <button onClick={() => deletarTarefa(tarefa.id)}>
+          />
+          <span>{tarefa.texto}</span>
+          <button 
+            className="btn-deletar"
+            onClick={() => deletarTarefa(tarefa.id)}
+          >
             🗑️
           </button>
-          </div>
-        ))} 
-    </div>
-  )
+        </div>
+      ))
+    )}
+      
+
+      <h2>Completas</h2>
+     {completas.length === 0 ? (
+      <p className="vazio">Nenhuma tarefa completa ainda</p>
+    ) : (
+      completas.map(tarefa => (
+        <div key={tarefa.id} className="tarefa-item">
+          <input
+            type='checkbox'
+            checked={tarefa.completa}
+            onChange={() => marcarCompleta(tarefa.id)}
+          />
+          <span className="tarefa-completa">{tarefa.texto}</span>
+          <button 
+            className="btn-deletar"
+            onClick={() => deletarTarefa(tarefa.id)}
+          >
+            🗑️
+          </button>
+        </div>
+      ))
+    )}
+  </div>
+)
+  
 }
 
 export default TodoList

@@ -1,0 +1,44 @@
+#### Dia 3 (17/Dez) - Terça ✅ COMPLETO
+
+**Objetivo:** TODO List com arrays
+
+**Atividades:**
+- [x] Planejamento completo (30min)
+- [x] Estados com arrays
+- [x] Input controlado (value + onChange)
+- [x] Função adicionar tarefa
+- [x] Função deletar (.filter)
+- [x] Função marcar completa (.map)
+- [x] Renderização com .map()
+- [x] Separação Pendentes/Completas
+- [x] CSS responsivo
+
+**Horas dedicadas:** 3-4h
+
+**Código escrito:** ~120 linhas
+
+**O que aprendi:**
+- useState com arrays (não só números!)
+- .map() pra renderizar listas
+- .filter() pra filtrar/deletar
+- Spread operator [...tarefas, nova]
+- Input controlado (value + onChange)
+- Key prop obrigatória em listas
+- Arrays em React são imutáveis
+
+**Momento "Click":**
+"Entendi como .map() e .filter() funcionam! 
+Agora faz sentido como manipular arrays em React.
+Ver a tarefa mudando de Pendentes pra Completas foi incrível!"
+
+**Desafios encontrados:**
+1. Coloquei .map() fora do return → Aprendi que JSX só funciona dentro
+2. Input com </input> → Aprendi que input é self-closing
+3. Filtro de completas errado → Entendi ! vs sem !
+4. marcarCompleta sem === → Aprendi comparação correta
+
+**Como me senti:**
+Muito satisfeito! 😊 Consegui fazer CRUD completo.
+Arrays ficaram mais claros. Me sinto mais confiante!
+
+**Energia:** 🔥🔥🔥🔥🔥 (5/5)

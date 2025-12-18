@@ -98,17 +98,30 @@ h2 {
 .tarefa-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px;
+  gap: 12px; /* Espaço entre elementos */
+  padding: 12px 16px; /* Mais padding */
   margin-bottom: 10px;
   background: #f9f9f9;
   border-radius: 10px;
   transition: all 0.3s;
+  min-height: 45px; /* Altura mínima */
 }
 
-.tarefa-item:hover {
-  background: #f0f0f0;
-  transform: translateX(5px);
+.tarefa-item span {
+  flex: 1; /* Ocupa espaço disponível */
+  font-size: 16px;
+  color: #333;
+  word-break: break-word; /* Quebra texto longo */
+  margin-right: 8px; /* Espaço antes do botão */
+}
+
+.btn-deletar {
+  background: #e74c3c;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  flex-shrink: 0; /* Não encolhe */
+  min-width: 40px; /* Largura mínima */
 }
 
 /* Checkbox */
@@ -171,4 +184,9 @@ input[type="checkbox"] {
   button {
     width: 100%;
   }
+  .Filho button {
+  padding: 12px 24px; /* Menos padding horizontal */
+  font-size: 20px;
+  min-width: 50px; /* Largura mínima */
+}
 }

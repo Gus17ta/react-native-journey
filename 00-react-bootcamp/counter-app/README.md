@@ -46,8 +46,8 @@ npm start
 
 ## 🐛 Desafios Enfrentados
 
-- **Desafio:** [Problema que teve]
-- **Solução:** [Como resolveu]
+- **Desafio:** Um pouco da falta de conhecimento me deu certo trabalho para enterder algumas coisas porem consegui terminar ele da melhor forma
+- **Solução:** Fazendo pesquisas e vendo alguns videos para enterder como funcionava a aestrutura do código
 
 ## 📝 Próximas Melhorias
 
@@ -56,8 +56,8 @@ npm start
 
 ## 📅 Informações do Projeto
 
-**Desenvolvido em:** [Data]  
-**Tempo de desenvolvimento:** ~[X] horas  
+**Desenvolvido em:** 16/12/2025  
+**Tempo de desenvolvimento:** 2h horas  
 **Status:** ✅ Concluído
 
 ---

@@ -1,10 +1,10 @@
-# 📋 [Nome do App]
+# 📋 [Counter]
 
-[Descrição curta em 1 linha]
+Priemeira criação
 
 ## 🎯 Sobre o Projeto
 
-[2-3 frases sobre o que o app faz e por que você fez]
+Minha primeira criação um app de contagem que fiz para aprender alguns conceitos basicos da aplicação em react
 
 ## ✨ Features
 
